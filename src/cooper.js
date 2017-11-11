@@ -55,13 +55,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1500){
         return "Poor";
       }
-      if(attr.completed_distance > 1500){
+      if(attr.completed_distance > 1500 && attr.completed_distance <= 1799){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1800){
+      if(attr.completed_distance >= 1800 && attr.completed_distance <= 2199){
         return "Average";
       }
-      if(attr.completed_distance >= 2200){
+      if(attr.completed_distance >= 2200 && attr.completed_distance <= 2699){
         return "Above Average";
       }
       if(attr.completed_distance >= 2700){
