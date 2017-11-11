@@ -3,7 +3,7 @@ describe('Athlete', function(){
 
   beforeEach(function(){
     athlete = new Athlete({
-      gender: female,
+      gender: 'female',
       age: 22,
       completed_distance: 2500,
     });
