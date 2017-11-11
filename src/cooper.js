@@ -4,13 +4,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1500){
         return "Poor";
       }
-      if(attr.completed_distance > 1500){
+      if(attr.completed_distance > 1500 && attr.completed_distance <= 1599){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1600){
+      if(attr.completed_distance >= 1600 && attr.completed_distance <= 1899){
         return "Average";
       }
-      if(attr.completed_distance >= 1900){
+      if(attr.completed_distance >= 1900 && attr.completed_distance <= 1999){
         return "Above Average";
       }
       if(attr.completed_distance >= 2000){
@@ -21,13 +21,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1600){
         return "Poor";
       }
-      if(attr.completed_distance > 1600){
+      if(attr.completed_distance > 1600 && attr.completed_distance <= 1699){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1700){
+      if(attr.completed_distance >= 1700 && attr.completed_distance <= 1999){
         return "Average";
       }
-      if(attr.completed_distance >= 2000){
+      if(attr.completed_distance >= 2000 && attr.completed_distance <= 2099){
         return "Above Average";
       }
       if(attr.completed_distance >= 2100){
@@ -38,13 +38,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1700){
         return "Poor";
       }
-      if(attr.completed_distance > 1700){
+      if(attr.completed_distance > 1700 && attr.completed_distance <= 1799){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1800){
+      if(attr.completed_distance >= 1800 && attr.completed_distance <= 2099){
         return "Average";
       }
-      if(attr.completed_distance >= 2100){
+      if(attr.completed_distance >= 2100 && attr.completed_distance <= 2299){
         return "Above Average";
       }
       if(attr.completed_distance >= 2300){
@@ -72,13 +72,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1400){
         return "Poor";
       }
-      if(attr.completed_distance > 1400){
+      if(attr.completed_distance > 1400 && attr.completed_distance <= 1699){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1700){
+      if(attr.completed_distance >= 1700 && attr.completed_distance <= 1999){
         return "Average";
       }
-      if(attr.completed_distance >= 2000){
+      if(attr.completed_distance >= 2000 && attr.completed_distance <= 2499){
         return "Above Average";
       }
       if(attr.completed_distance >= 2500){
@@ -89,13 +89,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1200){
         return "Poor";
       }
-      if(attr.completed_distance > 1200){
+      if(attr.completed_distance > 1200 && attr.completed_distance <= 1499){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1500){
+      if(attr.completed_distance >= 1500 && attr.completed_distance <= 1899){
         return "Average";
       }
-      if(attr.completed_distance >= 1900){
+      if(attr.completed_distance >= 1900 && attr.completed_distance <= 2299){
         return "Above Average";
       }
       if(attr.completed_distance >= 2300){
@@ -106,13 +106,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1100){
         return "Poor";
       }
-      if(attr.completed_distance > 1100){
+      if(attr.completed_distance > 1100 && attr.completed_distance <= 1399){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1400){
+      if(attr.completed_distance >= 1400 && attr.completed_distance <= 1699){
         return "Average";
       }
-      if(attr.completed_distance >= 1700){
+      if(attr.completed_distance >= 1700 && attr.completed_distance <= 2199){
         return "Above Average";
       }
       if(attr.completed_distance >= 2200){
@@ -124,13 +124,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 2100){
         return "Poor";
       }
-      if(attr.completed_distance > 2100){
+      if(attr.completed_distance > 2100 && attr.completed_distance <= 2199){
         return "Below Average";
       }
-      if(attr.completed_distance >= 2200){
+      if(attr.completed_distance >= 2200 && attr.completed_distance <= 2399){
         return "Average";
       }
-      if(attr.completed_distance >= 2400){
+      if(attr.completed_distance >= 2400 && attr.completed_distance <= 2699){
         return "Above Average";
       }
       if(attr.completed_distance >= 2700){
@@ -138,16 +138,16 @@ function CooperResponse(attr){
       }
     }
     if(attr.age >= 15 && attr.age <= 16){
-      if(obj.completed_distance <= 2200){
+      if(attr.completed_distance <= 2200){
         return "Poor";
       }
-      if(attr.completed_distance > 2200){
+      if(attr.completed_distance > 2200 && attr.completed_distance <= 2299){
         return "Below Average";
       }
-      if(attr.completed_distance >= 2300){
+      if(attr.completed_distance >= 2300 && attr.completed_distance <= 2499){
         return "Average";
       }
-      if(attr.completed_distance >= 2500){
+      if(attr.completed_distance >= 2500 && attr.completed_distance <= 2799){
         return "Above Average";
       }
       if(attr.completed_distance >= 2800){
@@ -158,13 +158,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 2300){
         return "Poor";
       }
-      if(attr.completed_distance > 2300){
+      if(attr.completed_distance > 2300 && attr.completed_distance <= 2499){
         return "Below Average";
       }
-      if(attr.completed_distance >= 2500){
+      if(attr.completed_distance >= 2500 && attr.completed_distance <= 2699){
         return "Average";
       }
-      if(attr.completed_distance >= 2700){
+      if(attr.completed_distance >= 2700 && attr.completed_distance <= 2999){
         return "Above Average";
       }
       if(attr.completed_distance >= 3000){
@@ -175,13 +175,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1600){
         return "Poor";
       }
-      if(attr.completed_distance > 1600){
+      if(attr.completed_distance > 1600 && attr.completed_distance <= 2199){
         return "Below Average";
       }
-      if(attr.completed_distance >= 2200){
+      if(attr.completed_distance >= 2200 && attr.completed_distance <= 2399){
         return "Average";
       }
-      if(attr.completed_distance >= 2400){
+      if(attr.completed_distance >= 2400 && attr.completed_distance <= 2799){
         return "Above Average";
       }
       if(attr.completed_distance >= 2800){
@@ -192,13 +192,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1500){
         return"Poor";
       }
-      if(attr.completed_distance > 1500){
+      if(attr.completed_distance > 1500 && attr.completed_distance <= 1899){
         return"Below Average";
       }
-      if(attr.completed_distance >= 1900){
+      if(attr.completed_distance >= 1900 && attr.completed_distance <= 2299){
         return "Average";
       }
-      if(attr.completed_distance >= 2300){
+      if(attr.completed_distance >= 2300 && attr.completed_distance <= 2699){
         return "Above Average";
       }
       if(attr.completed_distance >= 2700){
@@ -209,13 +209,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1400){
         return "Poor";
       }
-      if(attr.completed_distance > 1400){
+      if(attr.completed_distance > 1400 && attr.completed_distance <= 1699){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1700){
+      if(attr.completed_distance >= 1700 && attr.completed_distance <= 2099){
         return "Average";
       }
-      if(attr.completed_distance >= 2100){
+      if(attr.completed_distance >= 2100 && attr.completed_distance <= 2499){
         return "Above Average";
       }
       if(attr.completed_distance >= 2500){
@@ -226,13 +226,13 @@ function CooperResponse(attr){
       if(attr.completed_distance <= 1300){
         return "Poor";
       }
-      if(attr.completed_distance > 1300){
+      if(attr.completed_distance > 1300 && attr.completed_distance <= 1599){
         return "Below Average";
       }
-      if(attr.completed_distance >= 1600){
+      if(attr.completed_distance >= 1600 && attr.completed_distance <= 1999){
         return "Average";
       }
-      if(attr.completed_distance >= 2000){
+      if(attr.completed_distance >= 2000 && attr.completed_distance <= 2399){
         return "Above Average";
       }
       if(attr.completed_distance >= 2400){
