@@ -4,11 +4,11 @@ TestResult.prototype = function(attr) {
   var age = attr.age;
   var completed_distance = attr.completed_distance;
   if ((gender === 'female' || gender === 'male') && age >= 13 && completed_distance > 0){
-    setCooperResponse(attr);
+    CooperResponse(attr);
   }
 };
 
-function setCooperResponse(attr) {
+function CooperResponse(attr) {
   if (attr.gender == 'female') {
     if (attr.age >= 13 && attr.age <= 14) {
       if (attr.completed_distance <= 1500) {
@@ -63,7 +63,7 @@ function setCooperResponse(attr) {
     }
     if (attr.age >= 20 && attr.age <= 29) {
       if (attr.completed_distance <= 1500) {
-        attr.CooperResponse = "Poor";
+        return "Poor";
       }
       if (attr.completed_distance > 1500 && attr.completed_distance <= 1799) {
         return "Below Average";

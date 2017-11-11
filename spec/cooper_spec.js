@@ -41,3 +41,22 @@ describe('CooperResponse', function() {
   });
 
 });
+
+describe('TestResult', function(){
+  var calculator;
+  var athlete;
+
+  beforeEach(function(){
+    athlete = new Athlete({
+      gender: 'male',
+      age: 34,
+      completed_distance: 2200
+    });
+    calculator = new TestResult();
+  });
+
+  it('calculates Cooper test result and returns "Average"', function() {
+    expect(CooperResponse).toEqual('Average');
+  });
+
+});
