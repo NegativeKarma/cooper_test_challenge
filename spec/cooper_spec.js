@@ -29,16 +29,22 @@
     age: 22;
     completed_distance: 2250
   })*/
+describe('CooperResponse', function(){
 
-  it('calculates Cooper test result and returns "above average"', function(){
-    expect(CooperResponse({gender: 'female', age: 22, completed_distance: 2500})).toEqual("Above Average");
+  it('calculates Cooper test result and returns "Poor"', function(){
+    expect(CooperResponse({gender: 'female', age: 22, completed_distance: 1400})).toEqual('Poor');
   });
 
-  it("returns a correct assessment on a calculation", function(){
+  it('calculates Cooper test result and returns "Average"', function(){
+    expect(CooperResponse({gender: 'female', age: 22, completed_distance: 1900})).toEqual('Average');
+  });
+
+});
+  /*it("returns a correct assessment on a calculation", function(){
     expect(CooperResponse({gender: 'male', age: 42, completed_distance: 2500})).toEqual("Excellent");
   });
 
-  /*it('calculates Cooper test result and returns "above average"', function() {
+  it('calculates Cooper test result and returns "above average"', function() {
     expect(athlete.CooperResponse).toEqual('above average');
   });
 
