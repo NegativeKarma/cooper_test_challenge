@@ -1,4 +1,4 @@
-describe('CooperResponse', function() {
+/*describe('CooperResponse', function() {
 
   it('calculates Cooper test result and returns "Poor"', function() {
     expect(CooperResponse({
@@ -40,7 +40,7 @@ describe('CooperResponse', function() {
     })).toEqual('Above Average');
   });
 
-});
+});*/
 
 describe('TestResult', function(){
   var calculator;
@@ -48,15 +48,15 @@ describe('TestResult', function(){
 
   beforeEach(function(){
     athlete = new Athlete({
-      gender: 'male',
-      age: 34,
-      completed_distance: 2200
+      gender: 'female',
+      age: 14,
+      completed_distance: 1700
     });
     calculator = new TestResult();
   });
 
   it('calculates Cooper test result and returns "Average"', function() {
-    expect(CooperResponse).toEqual('Average');
+    expect(athlete.status).toEqual('Average');
   });
 
 });

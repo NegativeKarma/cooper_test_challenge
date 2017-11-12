@@ -1,4 +1,4 @@
-function TestResult(){}
+/*function TestResult(){}
 TestResult.prototype = function(attr) {
   var gender = attr.gender;
   var age = attr.age;
@@ -8,7 +8,16 @@ TestResult.prototype = function(attr) {
   }
 };
 
-function CooperResponse(attr) {
+function CooperResponse(attr) {*/
+function TestResult() {
+
+}
+
+TestResult.prototype = function(attr) {
+  var gender = attr.gender;
+  var age = attr.age;
+  var completed_distance = attr.completed_distance;
+  if ((gender === 'female' || gender === 'male') && age >= 13 && completed_distance > 0){
   if (attr.gender == 'female') {
     if (attr.age >= 13 && attr.age <= 14) {
       if (attr.completed_distance <= 1500) {
@@ -250,4 +259,5 @@ function CooperResponse(attr) {
       }
     }
   }
+}
 }
