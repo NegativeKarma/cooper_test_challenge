@@ -1,4 +1,4 @@
-/*describe('CooperResponse', function() {
+describe('CooperResponse', function() {
 
   it('calculates Cooper test result and returns "Poor"', function() {
     expect(CooperResponse({
@@ -40,9 +40,9 @@
     })).toEqual('Above Average');
   });
 
-});*/
+});
 
-describe('TestResult', function(){
+/*describe('TestResult', function(){
   var calculator;
   var athlete;
 
@@ -59,4 +59,4 @@ describe('TestResult', function(){
     expect(athlete.status).toEqual('Average');
   });
 
-});
+});*/
